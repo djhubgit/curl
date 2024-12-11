@@ -10,4 +10,4 @@ jobs:
 --header "X-Auth-Email: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}" \
 --header "X-Auth-Key: ${{ secrets.CLOUDFLARE_API_KEY }}" \
 --header "Content-Type: application/json" \
---data '{ "name": "office-no-facebook-policy", "action": "block", "traffic": "dns.fqdn == \"facebook.com\"", "enabled": true, "schedule": { "time_zone": "America/Chicago", "mon":  "08:00-12:30,13:30-17:00"}}'
+--data '{"name":"office-no-facebook-policy", "action":"block", "traffic":"dns.fqdn == \"facebook.com\"", "enabled":true, "schedule":{ "time_zone":"America/Chicago", "mon":"08:00-12:30,13:30-17:00"}}'
